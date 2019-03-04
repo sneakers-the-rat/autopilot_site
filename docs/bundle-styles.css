@@ -50,7 +50,7 @@ a {
   background-position-x: 50%; }
   @media screen and (min-width: 768px) {
     .visual {
-      background-image: url(static/IMG_2396.jpg); } }
+      background-image: url(static/test.jpg); } }
 
 header {
   grid-area: header;

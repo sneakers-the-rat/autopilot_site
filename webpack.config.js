@@ -12,7 +12,7 @@ module.exports = {
         bundle: './src/app.js'
     } ,
     output: {
-        path: path.resolve(__dirname, './dist')
+        path: path.resolve(__dirname, './docs')
     },
     devtool: isDevelopment && "source-map",
     devServer: {
