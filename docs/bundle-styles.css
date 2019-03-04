@@ -52,6 +52,30 @@ a {
     .visual {
       background-image: url(static/test.jpg); } }
 
+.bigsquare {
+  height: 800px;
+  width: 100px;
+  text-align: center;
+  background-color: #FF0000; }
+
+.spacer {
+  height: 1vh; }
+
+.full-screen {
+  height: 100vh; }
+
+.half-screen {
+  height: 10vh; }
+
+/*
+.svg {
+  height: auto;
+  left: 0;
+  max-width: 800px;
+  position: fixed;
+  top: 80px;
+  z-index: 100;
+}*/
 header {
   grid-area: header;
   display: flex;

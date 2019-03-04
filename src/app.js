@@ -1,4 +1,5 @@
-window.$ = require('jquery');
+require('jquery');
+import $ from 'jquery';
 require('scrollmagic');
 
 
