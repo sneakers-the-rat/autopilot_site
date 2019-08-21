@@ -60,7 +60,7 @@ html {
 */
 html, button, input, select, textarea {
     font-family: sans-serif;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 html, body {
     overflow-x: hidden;
@@ -72,7 +72,7 @@ html, body {
 */
 body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 /*
@@ -470,9 +470,9 @@ Buttons
 .use-btn {
     display: inline-block;
     margin: 0 0px 0px 0;
-    padding: 20px 0px;
+    padding: 13px 0px;
     width: 100%;
-    text-align: center;
+    /*text-align: center;*/
     border-radius: 3px;
     border-style: solid;
     border-color: #ff0000;
@@ -485,6 +485,12 @@ Buttons
     color: #fff;
     text-decoration: none;
 }
+
+.ghlogo {
+    margin: 0 5% 0 8%;
+    text-align:left; 
+}
+
 .learn-btn, .download-btn {
     display: inline-block;
     padding: 20px 0px;
@@ -496,8 +502,8 @@ Buttons
     font-size: 16px;
 }
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: #187cd6;
+    color: #187cd6;
     text-decoration: none;
 }
 .read-more-btn {
@@ -625,10 +631,17 @@ header i {
 }
 
 .hero-text{
-    padding: 30% 0 20px 0;
+    padding: 30% 0 20px 2%;
     font-size: 42pt;
 
     font-family: 'Cutive Mono', monospace;
+}
+
+@media only screen and (max-width: 980px) {
+    .ghlogo {
+    margin: 0 10% 0 20%;
+    text-align:left; 
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -655,6 +668,8 @@ header i {
     }
 
 
+
+
     .learn-btn{
         text-align: center;
         margin: auto;
@@ -671,7 +686,7 @@ Video
 ========================================================================== */
 section.video i {
     margin-right: 10px;
-    color: #323a45;
+    color: #efefef;
     vertical-align: middle;
     font-size: 50px;
     -webkit-transition: color 300ms ease-in-out;
@@ -679,21 +694,22 @@ section.video i {
 }
 section.video h1 {
     font-weight: 400;
+    padding: 20px 0;
     font-size: 20px;
 }
-section.video {
-    padding: 60px 0;
-    background-color: #f6f7f9;
+section.video  {
+    padding: 0px 0;
+    background-color: rgb(32, 32, 29);
 }
 section.video a {
-    color: #323a45
+    color: #efefef;
 }
 section.video a:hover, section.video a:focus {
-    color: #73d0da;
+    color: #ff0000;
     text-decoration: none;
 }
 section.video a:hover i, section.video a:focus i {
-    color: #73d0da
+    color: #ff0000
 }
 
 /* ==========================================================================
@@ -731,7 +747,7 @@ Features Slider
     position: relative;
     padding: 11% 100px 10% 100px;
     height: 400px;
-    background-color: #3F6184;
+    background-color: #187cd6;
 }
 .features-slider ul {
     margin: 0;
@@ -1039,7 +1055,7 @@ Nav Overlay
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(52, 82, 113, 0.95);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 /* Menu style */
@@ -1070,8 +1086,17 @@ Nav Overlay
 }
 .overlay ul li i {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 40px;
+}
+
+.overlay ul li img, .overlay ul li svg {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
 }
 .overlay ul li a {
     display: block;
@@ -1079,19 +1104,25 @@ Nav Overlay
     min-width: 190px;
     border: 2px solid #fff;
     border-radius: 3px;
-    background-color: #345271;
+    background-color: #000000;
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: 'Lexend Deca', sans-serif;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
 .overlay ul li a:hover, .overlay ul li a:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: #ff0000;
+    background-color: #ff0000;
+    color: #000000;
 }
 
+.overlay ul li a:hover img, .overlay ul li a:focus img {
+    filter: brightness(0);
+
+}
 /* Effects */
 .overlay-boxify {
     visibility: hidden;
