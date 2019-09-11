@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <link href="hardware.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autopilot: Hardware</title>
+    <meta name="description" content="A free HTML5/CSS3 template made exclusively for Codrops" />
+    <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design" />
+    <meta name="author" content="" />
+    <!-- Bootstrap -->
+    <script src="../js/modernizr.custom.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/jquery.fancybox.css" rel="stylesheet">
+    <link href="../css/flickity.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <!--     <link href="../css/styles.css" rel="stylesheet"> -->
+    <link href="../css/queries.css" rel="stylesheet">
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="container">
+                <div class="row nav-wrapper">
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-left">
+                        <h1>Autopilot: Hardware</h1>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+                        <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section>
+        <div class="container">
+            <div class="filters">
+                <div class="ui-group">
+                    <h3>Color</h3>
+                    <div class="button-group js-radio-button-group" data-filter-group="color">
+                        <button class="button is-checked" data-filter="">any</button>
+                        <button class="button" data-filter=".red">red</button>
+                        <button class="button" data-filter=".blue">blue</button>
+                        <button class="button" data-filter=".yellow">yellow</button>
+                    </div>
+                </div>
+                <div class="ui-group">
+                    <h3>Size</h3>
+                    <div class="button-group js-radio-button-group" data-filter-group="size">
+                        <button class="button is-checked" data-filter="">any</button>
+                        <button class="button" data-filter=".small">small</button>
+                        <button class="button" data-filter=".wide">wide</button>
+                        <button class="button" data-filter=".big">big</button>
+                        <button class="button" data-filter=".tall">tall</button>
+                    </div>
+                </div>
+                <div class="ui-group">
+                    <h3>Shape</h3>
+                    <div class="button-group js-radio-button-group" data-filter-group="shape">
+                        <button class="button is-checked" data-filter="">any</button>
+                        <button class="button" data-filter=".round">round</button>
+                        <button class="button" data-filter=".square">square</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="color-shape small round red"></div>
+                <div class="color-shape small round blue"></div>
+                <div class="color-shape small round yellow"></div>
+                <div class="color-shape small square red"></div>
+                <div class="color-shape small square blue"></div>
+                <div class="color-shape small square yellow"></div>
+                <div class="color-shape wide round red"></div>
+                <div class="color-shape wide round blue"></div>
+                <div class="color-shape wide round yellow"></div>
+                <div class="color-shape wide square red"></div>
+                <div class="color-shape wide square blue"></div>
+                <div class="color-shape wide square yellow"></div>
+                <div class="color-shape big round red"></div>
+                <div class="color-shape big round blue"></div>
+                <div class="color-shape big round yellow"></div>
+                <div class="color-shape big square red"></div>
+                <div class="color-shape big square blue"></div>
+                <div class="color-shape big square yellow"></div>
+                <div class="color-shape tall round red"></div>
+                <div class="color-shape tall round blue"></div>
+                <div class="color-shape tall round yellow"></div>
+                <div class="color-shape tall square red"></div>
+                <div class="color-shape tall square blue"></div>
+                <div class="color-shape tall square yellow"></div>
+            </div>
+        </div>
+    </section>
+    <div class="overlay overlay-boxify">
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fa fa-heart"></i>about</a></li>
+                <li><a href="https://docs.rpilot.net"><img src="/img/books.svg" />Docs</a></li>
+            </ul>
+            <ul>
+                <li><a href="/hardware"><img src="/img/tools-solid.svg" /> Hardware</a></li>
+                <li><a href="https://git.io/auto-pi-lot"><i class="fa fa-github"></i>Source</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="../js/min/toucheffects-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="../js/flickity.pkgd.min.js"></script>
+    <script src="../js/jquery.fancybox.pack.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/retina.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/min/scripts-min.js"></script>
+        <script src="hardware.js"></script>
+</body>
+
+</html>
