@@ -24,9 +24,9 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> 
-     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"> 
-     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <!-- Facebook and Twitter integration -->
@@ -341,7 +341,7 @@
                                     <img src="/img/gh_logo.svg" class="ghlogo" height=36px /><span style="text-align:center;">Go to repo</span></a>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <a href="#about" class="learn-btn animated fadeInUp">Learn more <i class="fa fa-arrow-down"></i></a>
+                                <a href="#features" class="learn-btn animated fadeInUp">Learn more <i class="fa fa-arrow-down"></i></a>
                             </div>
                         </div>
                     </div>
@@ -351,77 +351,86 @@
             </div>
         </section>
     </header>
-    <section class="video" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <h1><a href="http://www.youtube.com/embed/9No-FiEInLA?autoplay=1&wmode=opaque&fs=1" class="youtube-media"><i class="fa fa-graduation-cap"></i>Read the Paper</a></h1>
+    <section id="feature-intro" class="features-intro">
+
+        <div class="container-fluid">
+            <div class="col-md-6 d-flex flex-column align-content-stretch features-bg">
+                <div class="col-md-6 texture-overlay d-flex flex-column align-content-stretch">
+                    <div class="d-flex text-center toplink">
+                        <h1><a href="https://auto-pi-lot.com/paper.pdf" class="youtube-media"><i class="fa fa-graduation-cap"></i>Read the Paper</a></h1>
+                    </div>
+                    <div class="d-flex text-center toplink">
+                        <h1><a href="https://docs.auto-pi-lot.com" class="youtube-media"><i class="fa fa-question-circle"></i>Read the Docs</a></h1>
+                    </div>
+                    <div class="d-flex text-center toplink">
+                        <h1><a href="/presentation"><i class="fa fa-play-circle-o"></i>See the Presentation</a></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 nopadding">
+                <div class="texture-overlay" style="z-index:-10">
+                                    </div>
+                <div class="features-slider">
+                    <ul class="slides" id="featuresSlider">
+                        <li>
+                            <h1>A Complete Behavior System</h1>
+                            <p>Autopilot is a complete framework for performing behavioral experiments. Everything you need is integrated: hardware control, stimulus delivery, task design, data acquisition, plotting, etc.</p>
+                            <!-- <p><a href="http://tympanus.net/codrops/?p=22554" class="arrow-btn">Find out why this freebie rocks! <i class="fa fa-long-arrow-right"></i></a></p> -->
+                        </li>
+                        <li>
+                            <h1>Unlimited Experiments</h1>
+                            <p>Autopilot distributes experiments over swarms of networked Raspberry Pis. Its flexible experimental design framework lets you think expansively about your experiments. Need to add another five head-mounted cameras? No problem, just add another few Pis. </p>
+                            <!-- <p><a href="#features" class="arrow-btn">Find out more <i class="fa fa-long-arrow-right"></i></a></p> -->
+                        </li>
+                        <li>
+                            <h1>Do Good Science</h1>
+                            <p>Autopilot makes doing good science easy: all your data is stored in a clean, human-readable format as soon as it's acquired. All experimental parameters are automatically saved, and your experiment can be replicated exactly with a single file.</p>
+                            <!-- <p><a href="http://tympanus.net/codrops/?p=22554" class="arrow-btn">Find out why this freebie rocks! <i class="fa fa-long-arrow-right"></i></a></p> -->
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="col-md-6 text-center">
-                    <h1><a href="/presentation"><i class="fa fa-play-circle-o"></i>See the Presentation</a></h1>
-                </div>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 700 400" style="z-index:-1; position: absolute;" xml:space="preserve">
+                        <style type="text/css">
+                        .featline {
+                            fill: none;
+                            stroke: #FF0000;
+                            stroke-miterlimit: 10;
+                            stroke-width: 2pt;
+                        }
+                        </style>
+                        <polyline class="featline" points="700,5.5 44.5,5.5 4.2,45.8 4.2,352.5 47.9,396.1 700,396.1 "/>
+<polyline class="featline" points="700,9.4 50.7,9.4 11.2,48.9 11.2,349.5 54,392.2 700,392.2 "/>
+<polyline class="featline" points="700,13.2 56.7,13.2 18,51.9 18,346.5 59.9,388.4 700,388.4 "/>
+<polyline class="featline" points="700,17 62.6,17 24.7,54.9 24.7,343.6 65.8,384.6 700,384.6 "/>
+<polyline class="featline" points="700,20.7 68.4,20.7 31.3,57.8 31.3,340.7 71.5,381 700,381 "/>
+                    </svg>
+
             </div>
         </div>
     </section>
-    <section class="features-intro">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 nopadding features-intro-img">
-                    <div class="features-bg">
-                        <div class="texture-overlay"></div>
-                        <div class="features-img wp1">
-                            <img src="img/html5-logo.png" alt="HTML5 Logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 nopadding">
-                    <div class="features-slider">
-                        <ul class="slides" id="featuresSlider">
-                            <li>
-                                <h1>The Fore-front of Design &amp; Technology</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                                <p><a href="#features" class="arrow-btn">Find out why this freebie rocks! <i class="fa fa-long-arrow-right"></i></a></p>
-                            </li>
-                            <li>
-                                <h1>Multi-Purpose User Centric Design</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                                <p><a href="http://tympanus.net/codrops/?p=22554" class="arrow-btn">Find out why this freebie rocks! <i class="fa fa-long-arrow-right"></i></a></p>
-                            </li>
-                            <li>
-                                <h1>Made with Love, Released for Free</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                                <p><a href="http://tympanus.net/codrops/?p=22554" class="arrow-btn">Find out why this freebie rocks! <i class="fa fa-long-arrow-right"></i></a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <section class="features-list" id="features">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="col-md-4 feature-1 wp2">
                         <div class="feature-icon">
-                            <i class="fa fa-desktop"></i>
+                            <i class="fa fa-flash"></i>
                         </div>
                         <div class="feature-content">
-                            <h1>Responsive</h1>
-                            <p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap.</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+                            <h1>Efficient</h1>
+                            <p>An order of magnitude faster and an order of magnitude less expensive than comparable systems.</p>
+                            <a href="/autopilot_paper.pdf" class="read-more-btn">See the paper<i class="fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4 feature-2 wp2 delay-05s">
                         <div class="feature-icon">
-                            <i class="fa fa-flash"></i>
+                            <i class="fa fa-plus"></i>
                         </div>
                         <div class="feature-content">
-                            <h1>Multi-Purpose</h1>
-                            <p>Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income.</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+                            <h1>Flexible</h1>
+                            <p>Program any task. Use any hardware. Autopilot doesn't put limits on your wildest experiments.</p>
+                            <a href="https://docs.auto-pi-lot.com" class="read-more-btn">See the docs<i class="fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4 feature-3 wp2 delay-1s">
@@ -429,8 +438,8 @@
                             <i class="fa fa-heart"></i>
                         </div>
                         <div class="feature-content">
-                            <h1>Absolutely Free</h1>
-                            <p>As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me, simply <a href="#">buy me a beer</a>. </p>
+                            <h1>Reproducible</h1>
+                            <p>Make your experiments 100% replicable, scale your experiments to do high-powered science.</p>
                             <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
@@ -438,7 +447,6 @@
             </div>
         </div>
     </section>
-    
     <section class="showcase">
         <div class="showcase-wrap">
             <div class="texture-overlay"></div>
@@ -464,7 +472,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h1>Showcase your Product or Service</h1>
+                        <h1>Hardware</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                         <blockquote class="team-quote">
                             <div class="avatar"><img src="img/avatar.png" alt="User Avatar"></div>
@@ -640,10 +648,10 @@
         <nav>
             <ul>
                 <li><a href="#about"><i class="fa fa-heart"></i>about</a></li>
-                <li><a href="https://docs.rpilot.net"><img src="/img/books.svg"/>Docs</a></li>
+                <li><a href="https://docs.rpilot.net"><img src="/img/books.svg" />Docs</a></li>
             </ul>
             <ul>
-                <li><a href="/hardware"><img src="/img/tools-solid.svg"/> Hardware</a></li>
+                <li><a href="/hardware"><img src="/img/tools-solid.svg" /> Hardware</a></li>
                 <li><a href="https://git.io/auto-pi-lot"><i class="fa fa-github"></i>Source</a></li>
             </ul>
         </nav>
@@ -688,6 +696,24 @@
             delay: anime.random(0, 2000),
             loop: true,
             direction: 'alternate',
+            easing: 'easeInOutSine',
+            autoplay: true
+        });
+    }
+    </script>
+
+    <script>
+    var pathEls = document.querySelectorAll('.featline');
+    for (var i = 0; i < pathEls.length; i++) {
+        var pathEl = pathEls[i];
+        var offset = anime.setDashoffset(pathEl);
+        pathEl.setAttribute('stroke-dashoffset', offset);
+        anime({
+            targets: pathEl,
+            strokeDashoffset: [offset, -offset],
+            duration: anime.random(3000, 5000),
+            delay: anime.random(0, 2000),
+            loop: true,
             easing: 'easeInOutSine',
             autoplay: true
         });
