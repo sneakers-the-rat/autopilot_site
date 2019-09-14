@@ -1,0 +1,108 @@
+---
+layout: default
+---
+<div class="home">
+    {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
+    <div class="wrapper">
+        <div class="container">
+            <div class="col-12-md">
+                <div class="filters">
+                    <div class="ui-group row">
+                      <div class="col-sm-2">
+                        <h2>Type</h2>
+                      </div>
+                      <div class="col-sm-10">
+                        <div class="button-group js-radio-button-group" data-filter-group="color">
+                            <button class="button is-checked" data-filter="">any</button>
+                            <button class="button" data-filter=".instructions">Instructions</button>
+                            <button class="button" data-filter=".parts">Parts</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui-group row">
+                      <div class="col-sm-2">
+                        <h2>Group</h2>
+                      </div>
+                      <div class="col-sm-10">
+                        <div class="button-group js-radio-button-group" data-filter-group="size">
+                            <button class="button is-checked" data-filter="">any</button>
+                            <button class="button" data-filter=".arena">Arena</button>
+                            <button class="button" data-filter=".audio">Audio</button>
+                            <button class="button" data-filter=".raspi">Raspi</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui-group row">
+                      <div class="col-sm-2">
+                        <h2>Material</h2>
+                      </div>
+                        <div class="col-sm-10">
+                        <div class="button-group js-radio-button-group" data-filter-group="shape">
+                            <button class="button is-checked" data-filter="">any</button>
+                            <button class="button" data-filter=".pla">PLA</button>
+                            <button class="button" data-filter=".pcb">PCB</button>
+                            <button class="button" data-filter=".acrylic">Acrylic</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            {%- for post in site.posts -%}
+            <div class="color-shape {{post.type}} {{post.group}} {{post.material}}">
+                <a class="post-link" href="{{ post.url | relative_url }}">{{post.title}}</a>
+                <p>Type: {{post.type}}</p>
+                <p>Group: {{post.group}}</p>
+                <p>Material: {{post.material}}</p>
+            </div>
+            {%- endfor -%}
+            <!--                 <div class="color-shape small round red"></div>
+                <div class="color-shape small round blue"></div>
+                <div class="color-shape small round yellow"></div>
+                <div class="color-shape small square red"></div>
+                <div class="color-shape small square blue"></div>
+                <div class="color-shape small square yellow"></div>
+                <div class="color-shape wide round red"></div>
+                <div class="color-shape wide round blue"></div>
+                <div class="color-shape wide round yellow"></div>
+                <div class="color-shape wide square red"></div>
+                <div class="color-shape wide square blue"></div>
+                <div class="color-shape wide square yellow"></div>
+                <div class="color-shape big round red"></div>
+                <div class="color-shape big round blue"></div>
+                <div class="color-shape big round yellow"></div>
+                <div class="color-shape big square red"></div>
+                <div class="color-shape big square blue"></div>
+                <div class="color-shape big square yellow"></div>
+                <div class="color-shape tall round red"></div>
+                <div class="color-shape tall round blue"></div>
+                <div class="color-shape tall round yellow"></div>
+                <div class="color-shape tall square red"></div>
+                <div class="color-shape tall square blue"></div>
+                <div class="color-shape tall square yellow"></div> -->
+        </div>
+    </div>
+    <!-- {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+        {%- for post in site.posts -%}
+        <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
+        </li>
+        {%- endfor -%}
+    </ul> -->
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%} -->
+</div>

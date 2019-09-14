@@ -2,7 +2,8 @@
 
 // init Isotope
 var $grid = $('.grid').isotope({
-  itemSelector: '.color-shape'
+  itemSelector: '.color-shape',
+  layoutMode: 'vertical'
 });
 
 // store filter for each group
