@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Hex Grid Back"
+title:  "Dual Pi Frame"
 date:   2019-09-13 21:57:27 -0700
 categories: jekyll update
 type: parts
-group: arena
-material: acrylic
+group: raspi
+material: pla
+format: stl
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
