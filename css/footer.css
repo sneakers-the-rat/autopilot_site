@@ -1,0 +1,129 @@
+.footer-col-wrapper:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.site-footer {
+    border-top: 1px solid #e8e8e8;
+    padding: 30px 0
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: 15px
+}
+
+.contact-list, .social-media-list {
+    list-style: none;
+    margin-left: 0
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: #828282;
+    margin-left: -15px
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: 15px;
+    padding-left: 15px
+}
+
+.footer-col-1 {
+    width: 35%;
+}
+
+.footer-col-2 {
+    width: 35%;
+}
+
+.footer-col-3 {
+    width: 25%;
+}
+
+@media screen and (max-width:800px) {
+    .footer-col-1, .footer-col-2 {
+        width: -webkit-calc(50% - (30px / 2));
+        width: calc(50% - (30px / 2))
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (30px / 2));
+        width: calc(100% - (30px / 2))
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (30px / 2));
+        width: calc(100% - (30px / 2))
+    }
+
+}
+
+.footer-wrapper {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px
+}
+
+@media screen and (max-width:800px) {
+    .footer-wrapper {
+        max-width: -webkit-calc(1000px - (30px));
+        max-width: calc(1000px - (30px));
+        padding-right: 15px;
+        padding-left: 15px
+    }
+
+}
+
+.footer-wrapper:after, .footer-col-wrapper:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #828282;
+  padding-right: 5px;
+  vertical-align: text-top; }
+
+.social-media-list li + li {
+  padding-top: 0px; }
+
+  .social-media-list span {
+    color: #ff0000;
+  }
+
+.p-name {
+    color: #000000;
+}
+
+.u-email {
+    color: #ff0000;
+}
+
+.u-affil {
+    font-size: 10pt;
+    font-family: 'Cutive Mono', monospace;
+    padding-top: 2pt;
+    line-height: 1.0;
+}
+
+.u-spacer {
+    height: 12px;
+    width: 100%;
+}
+
+.footer-col-3 > p {
+    margin-top: 30px;
+}

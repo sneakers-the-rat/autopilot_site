@@ -1186,12 +1186,39 @@ footer p {
 }
 
 footer ul {
-    margin-top: 30px
+    margin-top: 30px;
+}
+
+.footer-nav {
+    direction: rtl;
+}
+
+.footer-nav > li {
+    float: right;
+    text-align: right;
+    margin-left: 5%;
+}
+
+@media screen and (max-width:500px) {
+.footer-nav > li {
+    float: none;
+    text-align: left;
+    margin-left: 0%;
+    /*margin-right: 10%;*/
+    clear: right;
+    padding: 5px;
+}
+
+.footer-nav {
+    direction: ltr;
+    margin-left: 0% !important;
+    margin-top: 10px !important;    }
 }
 
 footer li {
     float: left;
-    margin-right: 15%;
+    /*text-align:right;*/
+    /*margin-left: 5%;*/
     list-style: none;
     text-transform: uppercase;
     font-weight: 400;
@@ -1214,6 +1241,7 @@ footer li:last-child {
 
 .footer-nav {
 margin-top: 30px;
+margin-left: 30px;
 }
 /* ==========================================================================
 Nav Overlay

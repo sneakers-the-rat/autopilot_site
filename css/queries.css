@@ -1,6 +1,6 @@
 @media screen and (max-width:1200px){
 	.device{left:20%;top:-36px;}
-	footer li{margin-right:10%;}
+	/*footer li{margin-right:10%;}*/
 	.feature-content{width:55%;}
 }
 @media screen and (max-width:991px){
