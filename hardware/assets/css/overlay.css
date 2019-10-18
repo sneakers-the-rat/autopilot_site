@@ -1,0 +1,283 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
+  --menu-speed: 0.75s;
+}
+ 
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+/* 
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}*/
+ /*
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+ 
+.showcase {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+ 
+.showcase:before {
+  content: '';
+  background: url('https://images.pexels.com/photos/1655166/pexels-photo-1655166.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+ 
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+ 
+.showcase h1 {
+  font-size: 4rem;
+}
+ 
+.showcase p {
+  font-size: 1.3rem;
+}
+ 
+.btn {
+  display: inline-block;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+}
+ 
+.btn:hover {
+  opacity: 0.7;
+}*/
+ 
+/* construction STYLES */
+.construction-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+ 
+.construction-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+ 
+.construction-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* Hamburger Line */
+.construction-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+ 
+/* Hamburger Lines - Top & Bottom */
+.construction-wrap .hamburger > div::before,
+.construction-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+ 
+/* Moves Line Down */
+.construction-wrap .hamburger > div::after {
+  top: 10px;
+}
+ 
+/* Toggler Animation */
+.construction-wrap .toggler:not(:checked) + .hamburger > div {
+  transform: rotate(135deg);
+}
+ 
+/* Turns Lines Into X */
+.construction-wrap .toggler:not(:checked) + .hamburger > div:before,
+.construction-wrap .toggler:not(:checked)+ .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+ 
+/* Rotate On Hover When Checked */
+.construction-wrap .toggler:not(:checked):hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+ 
+/* Show construction */
+.construction-wrap .toggler:checked ~ .construction {
+  visibility: hidden;
+}
+ 
+.construction-wrap .toggler:checked ~ .construction > div {
+  transform: scale(0);
+  transition-duration: var(--construction-speed);
+}
+ 
+.construction-wrap .toggler:not(:checked) ~ .construction > div > div {
+  opacity: 0;
+  transition:  opacity 0.4s ease 0.4s;
+}
+ 
+.construction-wrap .construction {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.construction-wrap .construction > div {
+  background: var(--overlay-color);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+ 
+.construction-wrap .construction > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  transform: scale(1);
+}
+ 
+.construction-wrap .construction > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+ 
+.construction-wrap .construction > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+
+
+.ribbon {
+ font-size: 62px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+ font-family: "Lexend Deca", sans-serif;
+ width: 35%;
+    
+ position: relative;
+ background: #C80D00;
+ color: #fff;
+ text-align: center;
+ padding: 1em 1em; /* Adjust to suit */
+ /*margin: 6em auto 6em;  Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+.ribbon > p {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 20pt;
+}
+
+
+@media only screen and (max-width: 720px) {
+.ribbon {
+  font-size: 24px !important;
+  }
+
+  .ribbon > p {
+    font-size: 12pt;
+  }
+}
+
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #b50c00;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -12em;
+ border-right-width: 11.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -12em;
+ border-left-width: 11.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #7f0800 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
