@@ -12,6 +12,7 @@
 <link rel="canonical" href="https://auto-pi-lot.com/hardware/" />
 <meta property="og:url" content="https://auto-pi-lot.com/hardware/" />
 <meta property="og:site_name" content="Autopilot Hardware" />
+<meta http-equiv="Refresh" content="4; url='https://wiki.auto-pi-lot.com'" />
 <script type="application/ld+json">
 {"url":"https://auto-pi-lot.com/hardware/","name":"Autopilot Hardware","headline":"Autopilot Hardware","description":"Hardware designs for Autopilot behavior","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
@@ -74,8 +75,8 @@
 
       <div>
                         <h1 class="ribbon">
-   <strong class="ribbon-content">Under Construction!</strong>
-   <p>Schematics, CAD Models, Parts Lists, and Instructions Coming Soon!</p>
+   <strong class="ribbon-content">We had a better idea!</strong>
+   <p>Redirecting you to the <a href="https://wiki.auto-pi-lot.com" style="color:#ffffff; text-decoration:underline;">wiki</a> in <span id="countdown">3</span></p>
 </h1>
 
       </div>
@@ -348,6 +349,22 @@
     <script src="/hardware/assets/js/bootstrap.min.js"></script>
     <script src="/hardware/assets/js/scripts.js"></script>
         <script src="/hardware/assets/js/hardware.js"></script>
+
+<script>
+    // Countdown to redirect!
+decrement = function(){
+    let countdown = document.getElementById("countdown");
+    let next = parseInt(countdown.textContent) - 1;
+    countdown.textContent = next;
+    if (next>0){
+        setTimeout(decrement, 1000)
+    }
+}
+
+window.addEventListener('load', (event) => {
+    setTimeout(decrement, 1000)
+})
+</script>
 
 </footer>
 </body><div class="overlay overlay-boxify">
