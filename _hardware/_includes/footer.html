@@ -43,5 +43,20 @@
     <script src="/hardware/assets/js/bootstrap.min.js"></script>
     <script src="/hardware/assets/js/scripts.js"></script>
         <script src="/hardware/assets/js/hardware.js"></script>
+        <script>
+    // Countdown to redirect!
+decrement = function(){
+    let countdown = document.getElementById("countdown");
+    let next = parseInt(countdown.textContent) - 1;
+    countdown.textContent = next;
+    if (next>0){
+        setTimeout(decrement, 1000)
+    }
+}
+
+window.addEventListener('load', (event) => {
+    setTimeout(decrement, 1000)
+})
+</script>
 
 </footer>
